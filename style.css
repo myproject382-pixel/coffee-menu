@@ -128,9 +128,12 @@ body:not(.inner-page) .categories {
 }
 
 .cat-info h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 26px;      /* أكبر بكتير وواضح */
+    font-weight: 900;     /* تقيل جداً */
+    color: #000000;       /* أسود صريح */
+    letter-spacing: 0.5px; /* مسافة بسيطة تخلي الخط أوضح */
 }
+
 
 .cat-info .count {
     font-size: 15px;
