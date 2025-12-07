@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>القهوة</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body class="inner-page">
 
@@ -19,10 +21,22 @@
     <div class="product"><span>قهوة تركي</span><span class="price">30 جنيه</span></div>
     <div class="product"><span>أمريكانو</span><span class="price">35 جنيه</span></div>
 </section>
+<div class="back-btn" onclick="goBack()">
+    الرجوع للخلف
+</div>
 
 <footer>
     <p>© 2025 كافيه قهوة & مزاج</p>
 </footer>
+<script>
+function goBack() {
+    if (window.history.length > 1) {
+        window.history.back();
+    } else {
+        window.location.href = "index.html";
+    }
+}
+</script>
 
 </body>
 </html>
