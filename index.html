@@ -1,109 +1,169 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Café Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القائمة الرئيسية</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function go(page) {
+            window.location.href = page;
+        }
+    </script>
 </head>
 
 <body>
 
-    <!-- NAV -->
-    <nav>
-        <div class="logo">Café Menu</div>
-    </nav>
+<nav>
+    <div class="logo">قــائــمــة الـمـشــروبــات</div>
+</nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h2>اختر فئتك المفضلة</h2>
-    </section>
+<section class="hero">
+    <h2>اختر القسم</h2>
+</section>
 
-    <!-- CATEGORIES -->
-    <section class="categories">
+<section class="categories">
 
-        <div class="cat-circle" onclick="go('coffee.html')">
-            <div class="icon-holder">
-                <img src="images/coffee.svg" alt="قهوة">
-            </div>
+    <div class="cat-box" onclick="go('coffee.html')">
+        <div class="cat-info">
             <h3>القهوة</h3>
+            <p class="count" id="count-coffee">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('milkshake.html')">
-            <div class="icon-holder">
-                <img src="images/milk.svg" alt="ميلك شيك">
-            </div>
+        <div class="cat-img">
+            <img src="images/coffee.svg" alt="قهوة">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('milkshake.html')">
+        <div class="cat-info">
             <h3>ميلك شيك</h3>
+            <p class="count" id="count-milk">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('fresh.html')">
-            <div class="icon-holder">
-                <img src="images/fresh.svg" alt="عصائر فريش">
-            </div>
+        <div class="cat-img">
+            <img src="images/milk.svg" alt="ميلك شيك">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('fresh.html')">
+        <div class="cat-info">
             <h3>عصائر فريش</h3>
+            <p class="count" id="count-fresh">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('seasonal.html')">
-            <div class="icon-holder">
-                <img src="images/seasonal.svg" alt="عصائر موسمية">
-            </div>
+        <div class="cat-img">
+            <img src="images/fresh.svg" alt="فريش">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('seasonal.html')">
+        <div class="cat-info">
             <h3>عصائر موسمية</h3>
+            <p class="count" id="count-seasonal">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('smoothie.html')">
-            <div class="icon-holder">
-                <img src="images/smoothie.svg" alt="سموزي">
-            </div>
+        <div class="cat-img">
+            <img src="images/seasonal.svg" alt="موسمية">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('smoothie.html')">
+        <div class="cat-info">
             <h3>سموزي</h3>
+            <p class="count" id="count-smoothie">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('icecream.html')">
-            <div class="icon-holder">
-                <img src="images/ice.svg" alt="مثلجات">
-            </div>
+        <div class="cat-img">
+            <img src="images/smoothie.svg" alt="سموزي">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('icecream.html')">
+        <div class="cat-info">
             <h3>مثلجات</h3>
+            <p class="count" id="count-ice">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('soda.html')">
-            <div class="icon-holder">
-                <img src="images/suda.svg" alt="صودا">
-            </div>
-            <h3>مشروبات غازية</h3>
+        <div class="cat-img">
+            <img src="images/ice.svg" alt="مثلجات">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('soda.html')">
+        <div class="cat-info">
+            <h3>مشروبات صودا</h3>
+            <p class="count" id="count-soda">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('waffle.html')">
-            <div class="icon-holder">
-                <img src="images/waffel.svg" alt="وافل">
-            </div>
+        <div class="cat-img">
+            <img src="images/suda.svg" alt="صودا">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('waffle.html')">
+        <div class="cat-info">
             <h3>وافل</h3>
+            <p class="count" id="count-waffle">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('yogurt.html')">
-            <div class="icon-holder">
-                <img src="images/yugert.svg" alt="زبادي">
-            </div>
+        <div class="cat-img">
+            <img src="images/waffel.svg" alt="وافل">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('yogurt.html')">
+        <div class="cat-info">
             <h3>زبادي</h3>
+            <p class="count" id="count-yogurt">عدد المنتجات: …</p>
         </div>
 
-        <div class="cat-circle" onclick="go('energy.html')">
-            <div class="icon-holder">
-                <img src="images/energy.svg" alt="طاقة">
-            </div>
+        <div class="cat-img">
+            <img src="images/yugert.svg" alt="زبادي">
+        </div>
+    </div>
+
+    <div class="cat-box" onclick="go('energy.html')">
+        <div class="cat-info">
             <h3>مشروبات طاقة</h3>
+            <p class="count" id="count-energy">عدد المنتجات: …</p>
         </div>
 
-    </section>
+        <div class="cat-img">
+            <img src="images/energy.svg" alt="طاقة">
+        </div>
+    </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 - Café Menu</p>
-    </footer>
+</section>
 
-    <script>
-        function go(page){
-            window.location.href = page;
-        }
-    </script>
+<footer>
+    جميع الحقوق محفوظة ©  
+</footer>
+
+<script>
+const categories = [
+    { file: "coffee.html", id: "count-coffee" },
+    { file: "milkshake.html", id: "count-milk" },
+    { file: "fresh.html", id: "count-fresh" },
+    { file: "seasonal.html", id: "count-seasonal" },
+    { file: "smoothie.html", id: "count-smoothie" },
+    { file: "icecream.html", id: "count-ice" },
+    { file: "soda.html", id: "count-soda" },
+    { file: "waffle.html", id: "count-waffle" },
+    { file: "yogurt.html", id: "count-yogurt" },
+    { file: "energy.html", id: "count-energy" }
+];
+
+categories.forEach(cat => {
+    fetch(cat.file)
+        .then(res => res.text())
+        .then(data => {
+            const count = (data.match(/class="product"/g) || []).length;
+            document.getElementById(cat.id).innerText = `عدد المنتجات: ${count}`;
+        });
+});
+</script>
 
 </body>
 </html>
