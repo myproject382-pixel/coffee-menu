@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ميلك شيك</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body class="inner-page">
     <nav>
@@ -44,9 +46,22 @@
             <span class="price">22 LE</span>
         </div>
     </div>
+    <div class="back-btn" onclick="goBack()">
+    الرجوع للخلف
+    </div>
 
     <footer>
         <p>© 2025 Al Fayhaa Café</p>
     </footer>
+    <script>
+function goBack() {
+    if (window.history.length > 1) {
+        window.history.back();
+    } else {
+        window.location.href = "index.html";
+    }
+}
+</script>
+
 </body>
 </html>
