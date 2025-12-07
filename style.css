@@ -101,6 +101,87 @@ body:not(.inner-page) .categories {
     font-size: 18px;
     color: white;
 }
+/* NEW style upgrade */
+/* CATEGORY BOX (RIGHT TEXT - LEFT IMAGE) */
+.cat-box {
+    width: 100%;
+    background: rgba(255,255,255,0.12);
+    padding: 18px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px auto;
+    backdrop-filter: blur(10px);
+    transition: .3s;
+}
+
+.cat-box:hover {
+    transform: scale(1.02);
+}
+
+/* TEXT RIGHT */
+.cat-info {
+    text-align: right;
+    color: white;
+}
+
+.cat-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.cat-info .count {
+    font-size: 15px;
+    opacity: .9;
+    color: #ffddbb;
+}
+
+/* IMAGE LEFT (still circle) */
+.cat-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    border: 5px solid #5a2f0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-img img {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}
+
+/* RESPONSIVE — MOBILE & LAPTOP: FULL WIDTH, STACKED */
+@media(max-width: 900px) {
+    .cat-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 600px) {
+    .categories {
+    width: 100%;
+    max-width: 700px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 10px;
+}
+
+
+    .cat-box {
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
 
 footer {
     background: var(--light);
@@ -188,3 +269,26 @@ footer {
     border: none !important;
     margin-top: 40px;
 }
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.categories .cat-box:nth-child(1) { animation-delay: .05s; }
+.categories .cat-box:nth-child(2) { animation-delay: .10s; }
+.categories .cat-box:nth-child(3) { animation-delay: .15s; }
+.categories .cat-box:nth-child(4) { animation-delay: .20s; }
+.categories .cat-box:nth-child(5) { animation-delay: .25s; }
+.categories .cat-box:nth-child(6) { animation-delay: .30s; }
+.categories .cat-box:nth-child(7) { animation-delay: .35s; }
+.categories .cat-box:nth-child(8) { animation-delay: .40s; }
+.categories .cat-box:nth-child(9) { animation-delay: .45s; }
+.categories .cat-box:nth-child(10) { animation-delay: .50s; }
+.categories .cat-box:nth-child(11) { animation-delay: .55s; }
