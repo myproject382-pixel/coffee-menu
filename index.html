@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">Café Menu</div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>اختر فئتك المفضلة</h2>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+
+        <div class="cat-circle" onclick="go('coffee.html')">
+            <div class="icon-holder">
+                <img src="images/coffee.svg" alt="قهوة">
+            </div>
+            <h3>القهوة</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('milkshake.html')">
+            <div class="icon-holder">
+                <img src="images/milk.svg" alt="ميلك شيك">
+            </div>
+            <h3>ميلك شيك</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('fresh.html')">
+            <div class="icon-holder">
+                <img src="images/fresh.svg" alt="عصائر فريش">
+            </div>
+            <h3>عصائر فريش</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('seasonal.html')">
+            <div class="icon-holder">
+                <img src="images/seasonal.svg" alt="عصائر موسمية">
+            </div>
+            <h3>عصائر موسمية</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('smoothie.html')">
+            <div class="icon-holder">
+                <img src="images/smoothie.svg" alt="سموزي">
+            </div>
+            <h3>سموزي</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('icecream.html')">
+            <div class="icon-holder">
+                <img src="images/ice.svg" alt="مثلجات">
+            </div>
+            <h3>مثلجات</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('soda.html')">
+            <div class="icon-holder">
+                <img src="images/suda.svg" alt="صودا">
+            </div>
+            <h3>مشروبات غازية</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('waffle.html')">
+            <div class="icon-holder">
+                <img src="images/waffel.svg" alt="وافل">
+            </div>
+            <h3>وافل</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('yogurt.html')">
+            <div class="icon-holder">
+                <img src="images/yugert.svg" alt="زبادي">
+            </div>
+            <h3>زبادي</h3>
+        </div>
+
+        <div class="cat-circle" onclick="go('energy.html')">
+            <div class="icon-holder">
+                <img src="images/energy.svg" alt="طاقة">
+            </div>
+            <h3>مشروبات طاقة</h3>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 - Café Menu</p>
+    </footer>
+
+    <script>
+        function go(page){
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

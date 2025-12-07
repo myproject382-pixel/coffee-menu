@@ -1,0 +1,164 @@
+/* === FULL STYLE.CSS AFTER ALL FIXES (INDEX + INNER PAGES EXACT MATCH SCREENSHOT) === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT COLORS */
+:root {
+    --main: #7a4b2d;
+    --light: #fdf3e7;
+    --dark: #5b3a1d;
+    --accent: #d9a775;
+    --card: #ffffff;
+}
+
+/* =============================
+   PAGE MAIN (INDEX ONLY)
+============================= */
+
+body:not(.inner-page) {
+    font-family: "Cairo", sans-serif;
+    background: linear-gradient(to bottom, #3e2415 0%, #6d4225 40%, #a47245 100%);
+    background-attachment: fixed;
+}
+
+nav {
+    background: var(--light);
+    padding: 15px;
+    border-bottom: 3px solid var(--accent);
+    display: flex;
+    justify-content: center;
+}
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main);
+}
+
+body:not(.inner-page) .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #ffffff50, #ffffff15);
+    border-bottom: 3px solid var(--accent);
+}
+body:not(.inner-page) .hero h2 {
+    color: white;
+    font-size: 28px;
+}
+
+body:not(.inner-page) .categories {
+    max-width: 1100px;
+    margin: 22px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 26px;
+    padding: 6px;
+}
+
+.cat-circle {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    transition: transform .25s ease;
+    margin: auto;
+}
+
+.icon-holder {
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    transition: transform .28s ease;
+    margin-bottom: 10px;
+}
+
+.cat-circle:hover .icon-holder {
+    transform: scale(1.08);
+}
+
+.icon-holder img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.cat-circle h3 {
+    margin-top: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    background: var(--light);
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid var(--accent);
+    color: var(--dark);
+}
+
+/* =============================
+   INNER PAGES EXACT MATCH SCREENSHOT
+============================= */
+
+.inner-page {
+    background: linear-gradient(to bottom, #f8d6b8, #f3a25e);
+    min-height: 100vh;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.inner-page nav {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.inner-page h2 {
+    margin: 30px 0 20px;
+    font-size: 26px;
+    color: #5b3a1d;
+}
+
+.inner-page .menu-list {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+    background: transparent;
+}
+
+.inner-page .product {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 12px auto;
+    max-width: 450px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.inner-page .product .price {
+    font-weight: bold;
+    color: #7a4b2d;
+}
+
+.inner-page footer {
+    background: transparent !important;
+    color: #5b3a1d !important;
+    border: none !important;
+    margin-top: 40px;
+}
